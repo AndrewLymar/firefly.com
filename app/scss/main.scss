@@ -1,0 +1,243 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "flex";
+body {
+	font-size: 16px;
+	min-width: 320px;
+	line-height: 1.65;
+	font-family: $default-font;
+}
+
+.container {
+	width: 100%;
+	max-width: $max-container-width;
+	margin: 0 auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.button {
+	padding: 15px 30px;
+	border: none;
+	border-radius: 22px;
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #4caf50;
+	box-shadow: 0 0 12px rgba(108, 108, 108, 0.23);
+	cursor: pointer;
+}
+
+.header {
+	background: url(../img/header-bg.jpg) no-repeat;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+.info {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #E5E5E5;
+	background: #fff;
+	z-index: 100;
+	&__social {
+		margin-right: 20px;
+		cursor: pointer;
+	}
+	&__contacts {
+		font-family: 'Roboto', sans-serif;
+		font-size: 12px;
+	}
+	&__telephone {
+		line-height: 14.4px;
+		color: #303842;
+		span {
+			margin-left: 16px;
+			font-weight: 300;
+			line-height: 12px;
+			color: #6b7c93;
+		}
+	}
+}
+
+.menu {
+	padding: 15px 25px;
+	background: #fff;
+	box-shadow: 0 2px 10px rgba(182, 182, 182, 0.24);
+	z-index: 100;
+	&__item {
+		margin-right: 50px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__link {
+		font-family: 'Roboto', sans-serif;
+		font-size: 11px;
+		line-height: 24px;
+		letter-spacing: 2.2px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #45505e;
+	}
+}
+
+.logo {
+	cursor: pointer;
+	&__text {
+		font-size: 26px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #303842;
+	}
+	&__img {
+		margin-right: 10px;
+	}
+}
+
+.banner {
+	padding-top: 300px;
+	padding-bottom: 180px;
+	font-family: 'Roboto', sans-serif;
+	&__title {
+		max-width: 840px;
+		font-size: 56px;
+		line-height: 72px;
+		font-weight: 300;
+		color: #303842;
+	}
+	&__description {
+		max-width: 675px;
+		margin-top: 50px;
+		font-size: 18px;
+		line-height: 26px;
+		font-weight: 300;
+		color: #6b7c93;
+	}
+	&__button {
+		margin-top: 40px;
+	}
+}
+
+.customers {
+	padding-top: 42px;
+	padding-bottom: 40px;
+	@media only screen and (max-width: 1072px) {
+		justify-content: center;
+	}
+	&__text {
+		flex-basis: 350px;
+		@media only screen and (max-width: 1072px) {
+			text-align: center;
+		}
+	}
+	&__title {
+		margin-top: 25px;
+	}
+	&__brands {
+		flex-basis: 670px;
+		@media only screen and (max-width: 366px) {
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+}
+
+.section-text {
+	max-width: 600px;
+	font-weight: 300;
+	line-height: 24px;
+	&__title {
+		font-family: 'Roboto', sans-serif;
+		font-size: 24px;
+		color: #303842;
+	}
+	&__title--large {
+		font-size: 34px;
+		line-height: 44px;
+	}
+	&__description {
+		margin-top: 25px;
+		margin-bottom: 0;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+		color: #8191a6;
+	}
+}
+
+.services {
+	padding-top: 100px;
+	padding-right: 100px;
+	@media only screen and (max-width: 1249px) {
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 100px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&__img {
+		width: 60%;
+		height: auto;
+		margin-left: -20%;
+		@media only screen and (max-width: 1249px) {
+			justify-content: center;
+			margin-left: 0;
+		}
+		@media only screen and (max-width: 800px) {
+			width: 80%;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	&__text {}
+	.section-text {
+		@media only screen and (max-width: 1249px) {
+			margin: 0 auto;
+			margin-top: 50px;
+			text-align: center;
+		}
+	}
+}
+
+.services-features {
+	margin-top: 50px;
+	@media only screen and (max-width: 1249px) {
+		justify-content: space-between;
+	}
+	@media only screen and (max-width: 692px) {
+		justify-content: center;
+	}
+}
+
+.features {
+	max-width: 745px;
+}
+
+.feature {
+	display: flex;
+	flex-basis: 330px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	&__img {
+		margin-right: 27px;
+	}
+	&__text {}
+	&__title {
+		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #252b33;
+	}
+	&__description {
+		margin-top: 30px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 13px;
+		font-weight: 300;
+		color: #8191a6;
+	}
+}
+
+@import "media";

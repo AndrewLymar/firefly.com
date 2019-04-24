@@ -98,7 +98,7 @@
 					<div class="section-text__title section-text__title--large">Our Services & Special Fields</div>
 					<p class="section-text__description section-text__description--large">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenea Lorem ipsum dolor sit amet. Adipiscing consectetuer adipiscing elit. Aenea Lorem ipsum dolor sit amet.</p>
 				</div>
-				<div class="features services-features flex-row gap-full">
+				<div class="features services-features flex-row jc-between-xl jc-center-md gap-full">
 					<div class="feature">
 						<svg width="30" height="30" fill="#4CAF50" class="feature__img">
 							<use xlink:href="img/sprite.svg#bicycle"></use>
@@ -202,7 +202,7 @@
 						<label class="label" for="email">Email Address</label>
 						<input class="input" type="text" name="email" required="required" required="required" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" id="email">
 					</div>
-					<div class="flex-row jc-between gap">
+					<div class="flex-row jc-between gap no-gap-md">
 						<div class="col-6 col-12-md">
 							<div class="input-container">
 								<label class="label" for="first-name">First Name</label>
@@ -224,11 +224,12 @@
 				</div>
 			</form>
 		</div>
+		<div class="contacts-decor"></div>
 	</section>
 	<footer class="footer">
-		<div class="container flex-row">
-			<div class="about col-4">
-				<div class="logo flex-row">
+		<div class="container flex-row jc-between">
+			<div class="footer-about flex-row col-4 col-12-sm">
+				<div class="logo flex-row jc-start">
 					<img src="img/logo.png" class="logo__img" alt="firefly">
 					<h1 class="logo__text">firefly</h1>
 				</div>
@@ -241,7 +242,46 @@
 						Terms and Conditions
 					</div>
 				</div>
-				<div class="about__copy">Copyright © 2016 ThemeXpert</div>
+				<div class="about__copy">Copyright © 2019 ThemeXpert</div>
+			</div>
+			<div class="footer-info flex-row col-6 jc-between col-12-sm gap-full">
+				<div class="footer-block col">
+					<h2 class="footer-block__title">Categories</h2>
+					<ul class="footer-links">
+						<li class="footer-links__item"><a href="" class="footer-links__link">Home</a></li>
+						<li class="footer-links__item"><a href="" class="footer-links__link">Testimonials</a></li>
+						<li class="footer-links__item"><a href="" class="footer-links__link">Team</a></li>
+						<li class="footer-links__item"><a href="" class="footer-links__link">Career</a></li>
+						<li class="footer-links__item"><a href="" class="footer-links__link">Contat</a></li>
+					</ul>
+				</div>
+				<div class="footer-block col">
+					<h2 class="footer-block__title">Community</h2>
+					<ul class="footer-links">
+						<li class="footer-links__item"><a href="" class="footer-links__link">Home</a></li>
+						<li class="footer-links__item"><a href="" class="footer-links__link">Testimonials</a></li>
+						<li class="footer-links__item"><a href="" class="footer-links__link">Team</a></li>
+						<li class="footer-links__item"><a href="" class="footer-links__link">Career</a></li>
+						<li class="footer-links__item"><a href="" class="footer-links__link">Contat</a></li>
+					</ul>
+				</div>
+				<div class="footer-block col">
+					<h2 class="footer-block__title">Follow Us</h2>
+					<div class="footer-block__socials flex-row">
+						<svg width="16" height="14" fill="#6B7C93" class="footer-block__social">
+							<use xlink:href="img/sprite.svg#twitter"></use>
+						</svg>
+						<svg width="9" height="16" fill="#6B7C93" class="footer-block__social">
+							<use xlink:href="img/sprite.svg#facebook"></use>
+						</svg>
+						<svg width="24" height="15" fill="#6B7C93" class="footer-block__social">
+							<use xlink:href="img/sprite.svg#google"></use>
+						</svg>
+						<svg width="10" height="16" fill="#6B7C93" class="footer-block__social">
+							<use xlink:href="img/sprite.svg#tumbler"></use>
+						</svg>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>

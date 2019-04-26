@@ -24,7 +24,6 @@ gulp.task('js', function () {
 		'app/js/jquery.min.js',
 		'app/js/svguse.js',
 		'app/js/mobileMenu.js',
-		'app/js/slick.min.js',
 		'app/js/common.js'
 		])
 		.pipe(concat('scripts.min.js'))

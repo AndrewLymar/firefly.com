@@ -10,9 +10,9 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="home">
 		<div class="info">
-			<div class="container flex-row jc-between ai-center">
+			<div class="container flex-row jc-between jc-center-sm ai-center gap-full">
 				<div class="info__socials flex-row">
 					<svg width="14" height="12" fill="#6B7C93" class="info__social">
 							<use xlink:href="img/sprite.svg#facebook-square-fa"></use>
@@ -39,14 +39,17 @@
 			</div>
 		</div>
 		<nav class="menu header-menu">
-			<div class="container flex-row jc-between ai-center">
+			<div class="container flex-row jc-between ai-center gap-full">
 				<div class="logo flex-row">
 					<img src="img/logo.png" class="logo__img" alt="firefly">
 					<h1 class="logo__text">firefly</h1>
 				</div>
+				<svg width="62" height="62" fill="#B5BCC3" class="menu__icon">
+					<use xlink:href="img/sprite.svg#menu"></use>
+				</svg>
 				<ul class="menu__list flex-row">
 					<li class="menu__item">
-						<a href="" class="menu__link">Home</a>
+						<a href="#home" class="menu__link">Home</a>
 					</li>
 					<li class="menu__item">
 						<a href="" class="menu__link">About</a>
@@ -70,7 +73,7 @@
 			<div class="banner flex-col ai-center ta-center">
 				<h2 class="banner__title">We create an alround experience for your Corporate business</h2>
 				<p class="banner__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis penatibus et magnis.</p>
-				<button class="button banner__button">Explore Now</button>
+				<button class="button banner_button">Explore Now</button>
 			</div>
 		</div>
 	</header>
@@ -78,11 +81,11 @@
 		<div class="container">
 			<div class="customers flex-row jc-between ai-center gap-full">
 				<div class="section-text customers__text">
-					<div class="section-text__title customers-title">Our Customers</div>
+					<div class="section-text__title customers__title">Our Customers</div>
 					<p class="section-text__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenea ipsum dolor.</p>
 				</div>
 				<div class="customers__brands flex-row jc-between ai-center gap-full">
-					<img src="img/vintage.png" class="brand-img" alt="vintage">
+					<img src="img/vintage.png" class="brands-img" alt="vintage">
 					<img src="img/woody.png" class="brands-img" alt="woody">
 					<img src="img/lumber-jack.png" class="brands-img" alt="lumber-jack">
 					<img src="img/retro-racer.png" class="brands-img" alt="retro-racer">

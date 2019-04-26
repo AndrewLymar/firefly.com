@@ -10,7 +10,7 @@
 
 .gap {
 	>* {
-		border: 0.50rem solid transparent;
+		border: 10px solid transparent;
 		background-clip: padding-box;
 		&:first-child {
 			border-left: 0;
@@ -23,7 +23,7 @@
 
 .gap-full {
 	>* {
-		border: 0.50rem solid transparent;
+		border: 10px solid transparent;
 		background-clip: padding-box;
 	}
 }

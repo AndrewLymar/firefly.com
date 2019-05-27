@@ -65,6 +65,7 @@
 			documentWidth = $(document).width();
 			if (!menuIsOpened && documentWidth > options.mobileResolution) {
 				showMenu();
+
 			} else if (menuIsOpened && documentWidth <= options.mobileResolution) {
 				hideMenu();
 			}
@@ -72,13 +73,11 @@
 
 		function onScroll(event) {
 			scrollPos = $(document).scrollTop();
-			if (documentWidth <= options.mobileResolution) {
-				if (options.menuType == "sticky") {
-					fixedMenu();
-				}
-				if (options.menuType == "custom") {
-					customMenu();
-				}
+			if (options.menuType == "sticky") {
+				fixedMenu();
+			}
+			if (options.menuType == "custom") {
+				customMenu();
 			}
 			$menuLinks.each(function () {
 				var currLink = $(this);
